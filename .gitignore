@@ -1,6 +1,7 @@
 .cache
 .vscode
 build
+IPA/Payload
 auby2/bin/GeometryJump
 auby2/bin/_GeometryJump.*
 generated*
