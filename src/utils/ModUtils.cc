@@ -15,7 +15,7 @@ namespace ModUtils
         return CCDirector::sharedDirector()->getWinSize() / 2;
     }
 
-    void createAlert(const char* title, const std::string* desc, const char* btn)
+    void createAlert(const char* title, std::string desc, const char* btn)
     {
         FLAlertLayer::create(nullptr, title, desc, btn, nullptr, 300.0)->show();
     }
