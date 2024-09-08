@@ -12,7 +12,7 @@ ButtonSprite* ButtonSprite::create(
     return ButtonSprite::create(caption, width, 0, scale, absolute, font, texture, height);
 }
 
-static FLAlertLayer* FLAlertLayer::create(const char* title, const std::string& desc, const char* btn)
+FLAlertLayer* FLAlertLayer::create(const char* title, const std::string& desc, const char* btn)
 {
     FLAlertLayer::create(nullptr, title, desc, btn, nullptr, 300.0);
 }
