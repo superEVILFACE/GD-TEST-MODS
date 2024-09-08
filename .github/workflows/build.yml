@@ -51,7 +51,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Auby
+          name: GD_MOD
           path: |
             ${{github.workspace}}/build/libgdTest.dylib
-            ${{github.workspace}}/auby2/bin/GeometryJump
+            ${{github.workspace}}/IPA/GeometryJump.ipa
