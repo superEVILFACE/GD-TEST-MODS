@@ -9,4 +9,6 @@ namespace ModUtils
     CCSprite* createSprite(const char* name, float ScaleFactor);
 
     const CCPoint getCenterPoint();
+
+    void createAlert(const char* title, const std::string* desc, const char* btn);
 }
