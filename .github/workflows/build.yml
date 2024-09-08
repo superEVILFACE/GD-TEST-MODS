@@ -54,7 +54,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: GD_MOD
+          name: GD_MOD${{github.run_id}}
           path: |
             ${{github.workspace}}/build/libgdTest.dylib
             ${{github.workspace}}/GeometryJump.ipa
