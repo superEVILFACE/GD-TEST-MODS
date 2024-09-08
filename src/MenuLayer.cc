@@ -3,9 +3,14 @@
 namespace
 {
 
-    void $(MenuLayer::onMoreGames)(void* self, CCObject*)
+    bool $(MenuLayer::init)(MenuLayer* self)
     {
-        FLAlertLayer::create("Not Geode???", "Hello from my custom mod!", "OK")->show(); 
+        $orig(self);
+
+        auto btn = CCSprite::createWithSpriteFrameName("pathIcon_10_001.png");
+        self->addChild(btn);
+
+        return true;
     }
 
 }

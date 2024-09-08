@@ -117,7 +117,7 @@ patch(
 )
 
 
-create_hook("MenuLayer::onMoreGames", 0x277644)
+create_hook("MenuLayer::init", 0x27604C)
 create_hook("LoadingLayer::init", 0x1DFA60)
 create_hook("GameManager::isIconUnlocked", 0x3235D4)
 create_hook("GameManager::isColorUnlocked", 0x3239A4)
