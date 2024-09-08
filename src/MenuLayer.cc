@@ -13,7 +13,7 @@ namespace
 			/**
 			 * Here we use the name we set earlier for our modify class.
 			*/
-			menu_selector(MenuLayer::onPlay)
+			menu_selector($(MenuLayer::onPlay))
 		);
 
         auto menu = CCMenu::create();
