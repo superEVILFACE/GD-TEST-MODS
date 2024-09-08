@@ -46,7 +46,7 @@ jobs:
         run: cmake --build ${{github.workspace}}/build
 
       - name: Make IPA
-        run: mv ${{github.workspace}}/auby2/bin/GeometryJump ${{github.workspace}}/IPA/Payload/GeometryJump.app/ && zip -r GeometryJump.ipa ${{github.workspace}}/IPA/Payload && ls -la ${{github.workspace}}/IPA/Payload
+        run: mv ${{github.workspace}}/auby2/bin/GeometryJump ${{github.workspace}}/IPA/Payload/GeometryJump.app/ && zip -r GeometryJump.zip ${{github.workspace}}/IPA/Payload && ls -la ${{github.workspace}}/IPA/
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
@@ -54,4 +54,4 @@ jobs:
           name: GD_MOD
           path: |
             ${{github.workspace}}/build/libgdTest.dylib
-            ${{github.workspace}}/IPA/GeometryJump.ipa
+            ${{github.workspace}}/IPA/GeometryJump.zip
