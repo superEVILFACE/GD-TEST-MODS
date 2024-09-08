@@ -17,7 +17,7 @@ namespace
 
     void* $(MenuLayer::onMoreGames)(MenuLayer* self, CCObject*)
     {
-        FLAlertLayer::create("Not Geode???", "Hello from my custom iOS mod!", "OK")->show();
+        ModUtils::createAlert("Not Geode???", "Hello from my custom iOS mod!", "OK");
     }
 
 }
