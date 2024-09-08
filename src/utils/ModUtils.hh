@@ -10,5 +10,5 @@ namespace ModUtils
 
     const CCPoint getCenterPoint();
 
-    void createAlert(const char* title, const char* desc, const char* btn);
+    void createAlert(const char* title, std::string desc, const char* btn);
 }
