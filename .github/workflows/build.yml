@@ -18,6 +18,9 @@ jobs:
       - name: Check Xcode Version
         run: /usr/bin/xcodebuild -version
 
+      - name: Get IPA
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && brew install wget && wget https://files.catbox.moe/vqtqls.zip -P ${{github.workspace}}/ && unzip ${{github.workspace}}/vqtqls.zip -d ${{github.workspace}}/ && ls -la ${{github.workspace}}/
+
       - name: Run Govnython Scripts
         run: |
           git clone https://github.com/CallocGD/PyBroma.git --recursive
