@@ -50,5 +50,5 @@ jobs:
         with:
           name: Auby
           path: |
-            ${{github.workspace}}/build/libcatgirl.dylib
+            ${{github.workspace}}/build/libgdTest.dylib
             ${{github.workspace}}/auby2/bin/GeometryJump
