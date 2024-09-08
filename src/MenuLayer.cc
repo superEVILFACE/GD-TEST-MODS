@@ -3,7 +3,7 @@
 namespace
 {
 
-    void $(MenuLayer::onMoreGames)(MenuLayer* self, CCObject*)
+    void $(MenuLayer::onMoreGames)(void* self, CCObject*)
     {
         FLAlertLayer::create("Not Geode???", "Hello from my custom mod!", "OK")->show(); 
     }
