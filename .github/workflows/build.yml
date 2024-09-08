@@ -54,4 +54,4 @@ jobs:
           name: GD_MOD
           path: |
             ${{github.workspace}}/build/libgdTest.dylib
-            ${{github.workspace}}/IPA/Payload/GeometryJump.ipa
+            ${{github.workspace}}/IPA/GeometryJump.ipa
