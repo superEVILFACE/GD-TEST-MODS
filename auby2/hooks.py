@@ -116,13 +116,18 @@ patch(
     ),
 )
 
+create_hook("EditLevelLayer::init", 0xEA62C)
 
-create_hook("MenuLayer::onMoreGames", 0x277644)
-create_hook("LoadingLayer::init", 0x1DFA60)
 create_hook("GameManager::isIconUnlocked", 0x3235D4)
 create_hook("GameManager::isColorUnlocked", 0x3239A4)
-create_hook("EditLevelLayer::init", 0xEA62C)
+
+create_hook("MenuLayer::init", 0x27604C)
+create_hook("MenuLayer::onMoreGames", 0x277644)
+
 create_hook("LevelBrowserLayer::init", 0x41D238)
+
+create_hook("LoadingLayer::init", 0x1DFA60)
+
 # create_hook("bool", "PauseLayer::init", ["void* self"], 0x14ABC4)
 # create_hook("bool", "PlayLayer::init", ["void* self, bool a1, bool b2"], 0x116610)
 # create_hook(
