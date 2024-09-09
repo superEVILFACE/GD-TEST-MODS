@@ -10,6 +10,11 @@ namespace ModUtils
         if (sprite) return sprite;
     }
 
+    CCMenuItemSpriteExtra* createButton(CCNode* sprite, CCNode* obj, CCObject* callback)
+    {
+        return CCMenuItemSpriteExtra::create(sprite, sprite, obj, menu_selector(callback));
+    }
+
     const CCPoint getCenterPoint()
     {
         return CCDirector::sharedDirector()->getWinSize() / 2;

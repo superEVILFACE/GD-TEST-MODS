@@ -4,6 +4,7 @@
 namespace ModUtils
 {
     CCSprite* createSprite(const char* name);
+    CCMenuItemSpriteExtra* createButton(CCNode* sprite, CCNode* obj, SEL_MenuHandler callback);
 
     const CCPoint getCenterPoint();
 
