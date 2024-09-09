@@ -12,7 +12,7 @@ namespace ModUtils
 
     CCMenuItemSpriteExtra* createButton(CCNode* sprite, CCNode* obj, SEL_MenuHandler callback)
     {
-        return CCMenuItemSpriteExtra::create(sprite, sprite, obj, callback));
+        return CCMenuItemSpriteExtra::create(sprite, sprite, obj, callback);
     }
 
     const CCPoint getCenterPoint()
