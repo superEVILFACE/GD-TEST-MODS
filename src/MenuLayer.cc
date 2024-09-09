@@ -11,7 +11,7 @@ namespace
         auto btn = ModUtils::createButton(
             ModUtils::createSprite("pathIcon_10_001.png"),
             self, 
-            MenuLayer::onMoreGames
+            &MenuLayer::onMoreGames
         );
         //btn->setPosition(ModUtils::getCenterPoint());
         
